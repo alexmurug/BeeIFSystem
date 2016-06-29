@@ -1,0 +1,297 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div id="headerwrap">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-lg-12">
+                <h1>Informaţia primită la timp îți poate salva viața</h1>
+                <!--button onclick="notifyMe()"  class="btn btn-large btn-success">Notifică-mă!</button-->
+                <div class="row">
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-red">
+                            <div class="inner">
+                                <!-- <h3>heyyy</h3>    gasNatural fenosa-->
+                                <h3>UnionFenosa</h3>
+                                <p><b>15.04.2016 - Bulevardul Dacia<br>Se preconizează întreruperi tehnice între orele 18.00-18.50</b></p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                            <a href="http://www.gasnaturalfenosa.md/" class="small-box-footer">
+                                Află mai multe <i class="fa fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-aqua">
+                            <div class="inner">
+                                <h3>Apă Canal<sup style="font-size: 20px"></sup></h3>
+
+                                <p><b>15.04.2016 - Strada Ismail<br>Apa se va sista pe termen 12 ore începând cu 8.00 AM </b></p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-tint"></i>
+                            </div>
+                            <a href="http://acc.md" class="small-box-footer">
+                                Află mai multe <i class="fa fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-yellow">
+                            <div class="inner">
+                                <h3>Social</h3>
+
+                                <p><b>Gheorghe Platon, 9.35 AM<br> Accident pe viaduct, Mercedes s-a tamponat cu un Voklswagen</b></p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <a href="http://socialmedia.md" class="small-box-footer">
+                                Află mai multe <i class="fa fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box bg-green">
+                            <div class="inner">
+                                <h3>Ecologie</h3>
+                                <p><b>Scurgeri de substanțe toxice în Râul Bîc. Au fost afectate plante și organisme vii.</b></p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-pie-graph"></i>
+                            </div>
+                            <a href="http://mediu.gov.md" class="small-box-footer">
+                                Află mai multe <i class="fa fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                </div>
+            </div>
+            <div class="col-lg-2">
+
+
+            </div>
+            <div class="col-lg-8">
+
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+    </div> <!--/ .container -->
+</div><!--/ #headerwrap -->
+
+<section id="desc" name="desc"></section>
+
+<!-- INTRO WRAP -->
+<div id="intro">
+    <div class="container">
+        <div class="row centered">
+            <h1>Rapid și sigur</h1>
+            <br>
+
+            <br>
+            <div class="col-lg-4">
+                <a href="#contact" class="smoothScroll">
+                    
+                    <img src="/Content/img/intro01.png" alt="">
+                    <h3>Comunicare</h3>
+
+                </a>
+            </div>
+
+            <div class="col-lg-4">
+                <a href="#fluxdate" class="smoothScroll">
+                    <img src="/Content/img/Flux-Date.png" alt="">
+                    <h3>Flux de date</h3>
+
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <a href="#showcase" class="smoothScroll">
+                    <img src="/Content/img/intro03.png" alt="">
+                    <h3>Monitorizare</h3>
+
+                </a>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div> <!--/ .container -->
+</div><!--/ #introwrap -->
+
+<section id="fluxdate" name="fluxdate"></section>
+<div class="row centered">
+    <h1>Flux de date</h1>
+    <br>
+    <div class="container-fluid">
+        <div class="col-md-7" style="margin:50px 10px 50px 10px;">
+            <canvas id="myChart" width="500" height="230"></canvas>
+            <script>
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["29.02", "01.03","02.03","02.03", "07.03","07.03","10.03","11.03","13.03","16.03","16.03"],
+        datasets: [{
+            label: 'Magnitudinea',
+            data: [3.2, 3.9, 3.1, 3.0, 3.3, 2.8, 2.9,3.0,3.5,2.8,2.8],
+			lineTension:0
+
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+            </script>
+        </div>
+
+        <div class="bs-example" data-example-id="responsive-embed-4by3-iframe-youtube" style="max-height:400px; padding-top:50px;"> <div class="embed-responsive embed-responsive-4by3" style="max-height:400px;"> <iframe class="embed-responsive-item" src="http://streaming.mobotixtools.com/live/5271f19a1048b" allowfullscreen="" style="max-height:400px;  border:solid 25px #2f2f2f; "></iframe> </div> </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div id="showcase">
+    <div class="container">
+        <div class="row">
+            <h1 class="centered">Alerte Recente</h1>
+        </div>
+    </div><!-- /container -->
+</div>
+<!-- Start MAP -->
+
+<div id="map" style="height:600px;"></div>
+
+<script type="text/javascript">
+    var locations = [
+      ['Sistare de apă', 46.9987485, 28.822202, 4],
+      ['Accident Rutier', 47.1792116, 26.822202, 5],
+      ['Sistare energie electrică', 47.0374422, 28.8287953, 3],
+      ['Accident Rutier', 47.0085256, 28.8287817, 2],
+      ['Maroubra Beach', 46.9999165, 28.8331327, 1]
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: new google.maps.LatLng(46.9987485, 28.822202),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+    var image = 'http://pngimages.net/sites/default/files/alert-png-image-28284.png';
+    for (i = 0; i < locations.length-1; i++) {
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+		icon: image
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+	var image1 = 'http://classicflame.ro/wp-content/uploads/2014/03/flacara-icoana.png';
+	marker = new google.maps.Marker({
+        position: new google.maps.LatLng(46.9999165, 28.8331327),
+        map: map,
+		icon: image1
+      });
+	 google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent('Incendiu 902');
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+</script>
+
+<!--div id="MoldovaMap" style="height:550px" ></div>
+<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+ <script>
+    var lat            = 28.819341;
+    var lon            = 46.992796;
+    var zoom           = 15;
+
+    var fromProjection = new OpenLayers.Projection("EPSG:4326");   // Transform from WGS 1984
+    var toProjection   = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
+    var position       = new OpenLayers.LonLat(lon, lat).transform( fromProjection, toProjection);
+
+
+
+        map = new OpenLayers.Map("MoldovaMap");
+        var mapnik         = new OpenLayers.Layer.OSM();
+        var fromProjection = new OpenLayers.Projection("EPSG:4326");   // Transform from WGS 1984
+        var toProjection   = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
+        var position       = new OpenLayers.LonLat(lat,lon).transform( fromProjection, toProjection);
+
+
+        map.addLayer(mapnik);
+
+        var markers = new OpenLayers.Layer.Markers( "Markers" );
+        map.addLayer(markers);
+        markers.addMarker(new OpenLayers.Marker(position));
+
+        map.setOptions({
+          mapTypeControlOptions: {
+            mapTypeIds: [
+              'MoldovaMap',
+              google.maps.MapTypeId.ROADMAP,
+              google.maps.MapTypeId.TERRAIN,
+              google.maps.MapTypeId.SATELLITE,
+              google.maps.MapTypeId.HYBRID
+            ],
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+          }
+        });
+
+        map.setCenter(position, zoom );
+
+    </script>
+<!-- END MAP -->
+
+<section id="contact" name="contact"></section>
+<div id="footerwrap">
+    <div class="container">
+        <div class="col-lg-5">
+            <h3>Adresa</h3>
+            <p>
+                Studentilor 10,<br />
+                Chisinau,<br />
+                MD-2009<br />
+                Moldova
+            </p>
+        </div>
+
+        <div class="col-lg-7">
+            <iframe src="https://docs.google.com/forms/d/1xVYR1gvc7k16McJb2c4pqRGFAuoxjtYup120TjCrsG8/viewform?embedded=true" width="760" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+    </div>
+</div>
